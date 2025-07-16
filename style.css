@@ -2,13 +2,13 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 2rem;
-  background-color: #f5f9ff;
+  background-color: #f5faff;
   color: #333;
 }
 
 h1 {
   text-align: center;
-  color: #3a6ea5;
+  color: #3178c6;
   margin-bottom: 2rem;
 }
 
@@ -19,22 +19,22 @@ h1 {
   gap: 2rem;
 }
 
-.semestre {
-  background-color: #eaf3fc;
+.año {
+  background-color: #e3f1fb;
   border-radius: 10px;
   padding: 1rem;
   width: 300px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.semestre h2 {
-  color: #2f5c88;
+.año h2 {
+  color: #2f6da5;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 .ramo {
-  background-color: #cfe0f5;
+  background-color: #cfe6fb;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -43,11 +43,11 @@ h1 {
 }
 
 .ramo:hover {
-  background-color: #bcd3f1;
+  background-color: #bbdaf3;
 }
 
 .ramo.aprobado {
-  background-color: #9bc4e2;
+  background-color: #9fcce8;
   text-decoration: line-through;
   color: #555;
 }
