@@ -1,60 +1,83 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 2rem;
-  background-color: #f5faff;
-  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f9fc;
+  color: #23406a;
+  margin: 20px;
 }
 
 h1 {
   text-align: center;
-  color: #3178c6;
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #1a3c6e;
 }
 
 #malla-container {
   display: flex;
-  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
-  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.año {
-  background-color: #e3f1fb;
-  border-radius: 10px;
-  padding: 1rem;
-  width: 300px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.semestre {
+  background: #d6e7f5;
+  padding: 15px 20px;
+  border-radius: 12px;
+  min-width: 230px;
+  box-shadow: 0 4px 8px rgba(35, 64, 106, 0.2);
 }
 
-.año h2 {
-  color: #2f6da5;
-  margin-bottom: 1rem;
-  text-align: center;
+.semestre h2 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #6ba1d4;
+  padding-bottom: 8px;
+  color: #1a3c6e;
 }
 
 .ramo {
-  background-color: #cfe6fb;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
+  background: #e8f1fb;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.25s ease;
+  box-shadow: inset 0 0 5px #bbd4f9;
 }
 
-.ramo:hover {
-  background-color: #bbdaf3;
+.ramo:hover:not(.bloqueado) {
+  background-color: #b9d3f2;
 }
 
 .ramo.aprobado {
-  background-color: #9fcce8;
-  text-decoration: line-through;
-  color: #555;
+  background-color: #a0c4ff;
+  color: #08306b;
+  font-weight: 700;
+  box-shadow: 0 0 8px #5a8de0;
 }
 
 .ramo.bloqueado {
-  background-color: #e0e0e0;
-  color: #999;
+  background-color: #d1d9e6;
+  color: #8899b0;
   cursor: not-allowed;
+  box-shadow: none;
+}
+
+.ramo .nombre {
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+.ramo .creditos {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85rem;
+  color: #486b9e;
+  font-weight: 600;
+  min-width: 60px;
+  text-align: right;
 }
 
